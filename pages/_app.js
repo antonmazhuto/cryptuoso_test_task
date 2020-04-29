@@ -49,8 +49,6 @@ function initRouterListeners() {
             scrollY = targetRoute.scrollY; // scrollY we had before
         }
 
-        console.log("Scrolling to", scrollY);
         window.requestAnimationFrame(() => window.scrollTo(0, scrollY));
-        console.log("routes now:", routes);
     }
 }
