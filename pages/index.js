@@ -8,7 +8,6 @@ import {Robots} from "../components/Robots";
 
 const Index = () => {
     const [isVisible, setVisible] = useState(true);
-    const [isFetching, setFetching] = useState(false);
     const { data , loading, fetchMore, error } = useQuery(
         ROBOTS_QUERY,
         {
